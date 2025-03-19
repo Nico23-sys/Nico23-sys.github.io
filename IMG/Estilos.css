@@ -1,0 +1,311 @@
+html{
+    /*Para darle estilo a la página en general*/
+    margin: 0 auto;
+    flex-flow: wrap;
+}
+
+body{
+    background-color: #c7c6c6;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+width: 100%;
+background-color:  #2776f5;
+padding: 20px;
+/*Para colocar centrados y en filas los enlaces en el header*/
+display: flex;
+flex-flow: row wrap;
+justify-content: space-around;
+position: fixed ;
+}
+
+header>nav>a{
+    color:aliceblue;
+    margin-right: 10px;
+    font-size: larger;
+    transition: 0.74s;
+    text-decoration: none;
+}
+
+header>nav>a:hover{
+    background-color:rgb(164, 241, 216);
+    padding: 11px;
+    border-radius: 10px;
+    color: #000000;
+}
+main{
+    /*Así colocamos la imagen y el texto pegados uno a otro*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(164, 241, 216);
+    border-bottom: 3px solid black;
+    padding: 30px;
+    padding-top: 70px;
+    width: 100%;
+
+}
+.fototraje{
+    /*Para modificar la foto del main*/
+    border-radius: 120px;
+    border: 3px solid rgb(125, 245, 207);
+    margin-right: 50px;
+}
+
+/*Esta norma se va a repetir varias veces, es para poner el titulo de cada seccion centrado*/
+.title{
+    text-align: center;
+    grid-area: title;
+}
+
+.cajassobremi{
+    /*Darle forma a las cajas*/
+    border: 3px solid rgb(0, 0, 0);
+    background-color: whitesmoke;
+    border-radius: 14px;
+    margin: 10px auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 10px;
+    width: 450px;
+    transition: 0.45s;
+}
+
+.cajassobremi:hover{
+background-color: rgb(164, 241, 216);
+}
+
+
+.grid-container {
+/*Diseño del grid*/
+    display: grid;    
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;  
+    
+    /*Con este grid colocamos la seccion sobre mi*/
+    grid-template-areas: 
+        "title title"
+        "habilidades formacion"
+        "intereses intereses"
+        "blandas entornos";
+}
+
+/*Para identificar cada caja*/
+#habilidades { 
+    grid-area: habilidades; 
+}
+
+/*Para identificar cada caja*/
+#formacion { 
+    grid-area: formacion; 
+}
+
+/*Para identificar cada caja*/
+#intereses { 
+    grid-area: intereses;
+}
+
+/*Para identificar cada caja*/
+#blandas { 
+    grid-area: blandas;
+}
+
+/*Para identificar cada caja*/
+#tecnologias {
+    grid-area: tecnologias;
+}
+
+/*Aumenyar el tamaño de las listas*/
+ul li{
+font-size: large;
+}
+
+h1{
+    font-size: 34px;
+}
+
+#id{
+display: flex;
+justify-content: center;
+}
+
+/*Para hacer las cajas de los proyectos*/
+ .proyectoscajas {
+    background: whitesmoke;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 40px;
+    margin-left: 8px;
+    text-align: center;
+    width: 300px;
+    transition: 0.45s;
+    flex-flow: row wrap;
+}
+
+.proyectoscajas:hover{
+background-color: rgb(125, 245, 207);
+}
+
+/*Configuracion de las imagenes de proyectos*/
+.Imagenesproyecto {
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    animation: alternate 200ms ease-in-out;
+    overflow: hidden;
+    transition: 2s;
+}
+
+.Imagenesproyecto:hover{
+    transform: scale(1.25);
+    filter: saturate(180%);
+}
+
+/*Flexbox para las cajas de los proyectos destacados*/
+.flexbox2{
+    display: flex;
+    justify-content:space-around;
+    flex-flow: row wrap;
+}
+
+/*Posicionar la seccion idiomas*/
+#Idiomas{
+    display: flex;
+    flex-flow: column nowrap ;
+    align-content: center;
+    align-items: center;
+}
+
+/*Para hacer las cajas de los proyectos*/
+.cajatabla{
+    border: 3px solid black;
+    background-color: whitesmoke;
+    padding: 40px;
+    border-radius: 11px;
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+}
+
+/*Modificar la tabla*/
+table{
+    width: 500px;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+    border-radius: 15px; 
+  overflow: hidden;;
+}
+
+
+table th {
+    background: #333;
+    color: white;
+    padding: 10px;
+}
+
+table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+table tr{
+    transition: 1s;
+}
+
+table tr:nth-child(odd):hover {
+    background: #ee6d6d;
+}
+
+/*Posicionar la seccion idiomas*/
+#Experiencia{
+    display: flex;
+    flex-flow: column nowrap ;
+    align-content: center;
+    align-items: center;
+}
+
+
+.Exp{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+/*Posicionar la seccion contacto*/
+#contactoseccion{
+    display: flex;
+    flex-flow: column nowrap ;
+    align-content: center;
+    align-items: center;
+}
+
+/* Crear la caja que engloba el formulario */
+.Contacto{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+/* Diseño de los formularios*/
+
+input {
+    border: 2px dashed black;
+    border-radius: 10px ;
+    padding: 8px;
+
+}
+
+input[type=submit]{
+    width: 100%;
+    border: dashed 2px rgb(7, 73, 255);
+    background-color: black;
+    color: white;
+     }
+
+ footer {
+    background-color:  #2776f5;
+    font-size: larger;
+     margin-top: 40px;
+     padding: 40px;
+     width: 100%;
+    color: #000000;
+     display: flex;
+    justify-content: center;
+ }
+    
+.tooltip2 {
+     position: relative;
+    display: inline-block;
+     border-bottom: 1px dotted black;
+    margin-right: 5%;
+}
+      
+.tooltip2 .textotooltip2 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+}
+     
+.tooltip2:hover .textotooltip2 {
+    visibility: visible;
+}
+
+
