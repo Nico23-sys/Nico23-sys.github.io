@@ -1,0 +1,363 @@
+html {
+    margin: 0 auto;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    width: 100%;
+    background-color: #1e293b;
+    padding: 15px 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+header > nav > a {
+    color: #e2e8f0;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header > nav > a:hover {
+    color: #60a5fa;
+    border-bottom: 2px solid #60a5fa;
+    padding-bottom: 5px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ffffff 0%, #eef2f6 100%);
+    border-bottom: 1px solid #d1d5db;
+    padding: 50px 20px;
+    padding-top: 140px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.fototraje {
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    border: 4px solid white;
+    margin-right: 50px;
+    object-fit: cover;
+}
+
+main div h1 {
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.title {
+    text-align: center;
+    grid-area: title;
+    color: #1e293b;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #60a5fa;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.cajassobremi, .proyectoscajas, .Exp, .Contacto, .cajatabla {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cajassobremi:hover, .proyectoscajas:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    grid-template-areas: 
+        "title title"
+        "habilidades formacion"
+        "intereses intereses"
+        "blandas entornos";
+}
+
+#habilidades { grid-area: habilidades; }
+#formacion { grid-area: formacion; }
+#intereses { grid-area: intereses; }
+#blandas { grid-area: blandas; }
+#entornos { grid-area: entornos; }
+
+.cajassobremi {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cajassobremi h2 {
+    color: #1e293b;
+    margin-top: 0;
+    border-bottom: 1px solid #e5e7eb;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+ul li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    list-style-type: square;
+    color: #4b5563;
+}
+
+h1 {
+    font-size: 34px;
+}
+
+#Proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.proyectoscajas {
+    padding: 30px;
+    margin: 15px;
+    text-align: center;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proyectoscajas h3 {
+    color: #1e293b;
+}
+
+.Imagenesproyecto {
+    width: 100%;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.flexbox2 {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding-bottom: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#Idiomas, #Experiencia, #contactoseccion {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    align-items: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.cajatabla {
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 600px;
+    width: 100%;
+    border: none;
+}
+
+table {
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table th {
+    background: #1e293b;
+    color: white;
+    padding: 15px 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+table td {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 15px 20px;
+    color: #4b5563;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+table tr:hover {
+    background-color: #f8fafc;
+}
+
+.Exp {
+    padding: 40px;
+    width: 60%;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #4b5563;
+}
+
+.Contacto {
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+}
+
+form {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 12px;
+    margin-top: 5px;
+    font-size: 1rem;
+    background-color: #f9fafb;
+    transition: 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #60a5fa;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.2);
+}
+
+input[type=submit] {
+    width: 100%;
+    border: none;
+    background-color: #2563eb;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+input[type=submit]:hover {
+    background-color: #1d4ed8;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+footer {
+    background-color: #1e293b;
+    margin-top: 60px;
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #e2e8f0;
+    display: flex;
+    justify-content: center;
+}
+
+.tooltip2 {
+    position: relative;
+    display: inline-block;
+    border-bottom: none;
+    cursor: default;
+}
+
+.tooltip2 .textotooltip2 {
+    visibility: hidden;
+    width: 120px;
+    background-color: #334155;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.tooltip2:hover .textotooltip2 {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "title"
+            "habilidades"
+            "formacion"
+            "intereses"
+            "blandas"
+            "entornos";
+    }
+    
+    main {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 100px;
+    }
+    
+    .fototraje {
+        margin-right: 0;
+        margin-bottom: 25px;
+        width: 200px;
+        height: 200px;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    header > nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Exp {
+        width: 90%;
+    }
+}

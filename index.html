@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicolás Otero Bouza</title>
+    <link rel="stylesheet" href="CSS/Estilos.css">
+    <link rel="icon" href="IMG/favicon-16x16.png" type="image/png">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#Inicio">Inicio</a>
+        <a href="#sobremi">Sobre mí</a>
+        <a href="#Proyectos">Proyectos</a>
+        <a href="#Idiomas">Idiomas</a>
+        <a href="#Experiencia">Experiencia</a>
+        <a href="#contactoseccion">Contacto</a>
+    </nav>
+</header>
+
+<main id="Inicio">
+    <div id="foto">
+        <img src="IMG/fototraje.jpg" alt="Fotografía de Nicolás Otero" class="fototraje" width="263" height="300">
+    </div>
+
+    <div>
+        <h1>Nicolás Otero Bouza</h1>
+        <p>En proceso de ser Desarrollador de Aplicaciones Multiplataforma.</p>
+        <p>En formación pero con pasión por la tecnología y la creación de soluciones innovadoras.</p>
+    </div>
+</main>
+
+<br>
+
+<section id="sobremi">
+    <div class="grid-container">
+        <h1 class="title">Sobre mí</h1>
+
+        <article class="cajassobremi" id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML5, CSS3</li>
+                <li>Java</li>
+                <li>MySQL, PhpMyAdmin</li>
+            </ul>
+        </article>
+    
+        <article class="cajassobremi" id="formacion">
+            <h2>Formación</h2>
+            <p>Bachillerato de ciencias en el IES Monte das Moas.</p>
+            <p>Actualmente Desarrollo de Aplicaciones Multiplataforma, en el CPR Liceo la Paz.</p>
+        </article>
+
+        <article class="cajassobremi" id="intereses">
+            <h2>Intereses</h2>
+            <p>Interesado en nuevas tecnologías, innovación digital, buenas prácticas de programación y la comunidad tecnológica.</p>
+        </article>
+
+        <article class="cajassobremi" id="blandas">
+            <h2>Habilidades Blandas</h2>
+            <ul>
+                <li>Gran comunicación</li>
+                <li>Empatía</li>
+                <li>Trabajo en equipo</li>
+            </ul>
+        </article>
+
+        <article class="cajassobremi" id="entornos">
+            <h2>Entornos favoritos</h2>
+            <ul>
+                <li>IntelliJ</li>
+                <li>Visual Studio Code</li>
+                <li>Netbeans</li>
+            </ul>
+        </article>
+    </div>
+</section>
+
+<br>
+
+<section id="Proyectos">
+    <h1 class="title">Proyectos Destacados</h1>
+
+    <div class="flexbox2">
+        <article class="proyectoscajas">
+            <img src="IMG/golf.png" alt="Foto del proyecto de golf" class="Imagenesproyecto">
+            <br>
+            <h3>Controlador de golf</h3>
+            <p>Una app en la que puedes registrar, borrar y crear tus jugadores de golf favoritos. También puedes controlar las competiciones en las que participen. Hecha con JavaFX</p>
+        </article>
+
+        <article class="proyectoscajas">
+            <img src="IMG/react.png" alt="App de mercado electrónico de camisetas retro de la NBA hecha con React Native" class="Imagenesproyecto">
+            <br>
+            <h3>Calculador de figuras</h3>
+            <p>App de mercado electrónico de camisetas retro de la NBA hecha con React Native</p>
+        </article>
+
+        <article class="proyectoscajas">
+            <img src="IMG/Viaje.png" alt="Foto de una página de viajes" class="Imagenesproyecto">
+            <br>
+            <h3>Página de viajes</h3>
+            <p>¡Una página infravalorada para informarte sobre la "navegación" por los cielos!</p>
+        </article>
+    </div>
+</section>
+
+<section id="Idiomas">
+    <h1 class="title">Idiomas</h1>
+    <br>
+    <article class="cajatabla">
+        <table>
+            <thead>
+                <tr>
+                    <th>IDIOMA</th>
+                    <th>NIVEL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Español</td>
+                    <td>Nativo</td>
+                </tr>
+                <tr>
+                    <td>Gallego</td>
+                    <td>Nativo</td>
+                </tr>
+                <tr>
+                    <td>Inglés</td>
+                    <td>B2</td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+</section>
+
+<section id="Experiencia">
+    <h1 class="title">Experiencia</h1>
+    <article class="Exp">
+        <p>Aún sin experiencia laboral, pero con ganas de tenerla.</p>
+    </article>
+</section>
+
+<br>
+
+<section id="contactoseccion">
+    <h1 class="title">Contacto</h1>
+    <div class="Contacto">
+        <form action="">
+            <p>
+                Introduce tu nombre: 
+                <input type="text" name="nombre" required placeholder="Tu nombre aquí">
+            </p>
+            <br>
+            <p>
+                Introduce tu teléfono: 
+                <input type="tel" name="telefono" required placeholder="Ej: +34 600 123 456">
+            </p>
+            <br>
+            <p>
+                Introduce tu email: 
+                <input type="email" required placeholder="Ej: xxxxx@gmail.com">
+            </p>
+            <br>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </div>
+</section>    
+
+<br>
+
+<footer>
+    <div class="tooltip2">
+        <span class="colordenombre"> © Nicolás Otero Bouza</span>
+        <span class="textotooltip2">Creador</span>
+    </div>
+</footer>
+
+</body>
+</html>
