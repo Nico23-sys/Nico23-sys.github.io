@@ -148,37 +148,49 @@ h1 {
     width: 100%;
 }
 
-.proyectoscajas {
-    padding: 30px;
-    margin: 15px;
-    text-align: center;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.proyectoscajas h3 {
-    color: #1e293b;
-}
-
-.Imagenesproyecto {
-    width: 100%;
-    border-radius: 6px;
-    display: flex;
-    justify-content: center;
-    transition: 0.3s;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
 .flexbox2 {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    gap: 20px;
+    gap: 30px;
     padding-bottom: 40px;
     width: 100%;
     max-width: 1200px;
+    align-items: stretch;
+}
+
+.proyectoscajas {
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.proyectoscajas h3 {
+    color: #1e293b;
+    margin: 20px 0;
+}
+
+.proyectoscajas p {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.Imagenesproyecto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: 0.3s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 #Idiomas, #Experiencia, #contactoseccion {
